@@ -12,3 +12,10 @@ def get_answer():
     import random
     i = random.randint(0,20)
     return answer_list[i]
+
+def check_question():
+    x = add_question()
+    if(x[-1]=="?"):
+        print(get_answer)
+    else:
+        print("I can only answer questions.")
